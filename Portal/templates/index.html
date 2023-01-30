@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Webpage</title>
+</head>
+<body>
+    <div id="text">
+    {% for i in range(2000, port_num) %}
+        <p id="text">Skupina {{ i - 2000 }}: {{ messages[i - 2000] }}</p>
+    {% endfor %}
+    </div>
+
+</body>
+<script>
+setTimeout(function(){
+   window.location.reload(1);
+}, 1000);
+
+</script>
+</html>
